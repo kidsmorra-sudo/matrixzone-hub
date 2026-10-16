@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatrixZone - Ultimate Entertainment & Gaming Hub</title>
+    
+    <!-- Google Fonts & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    
+    <style>
+    /* RESET & BASE STYLES */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+        font-family: 'Plus Jakarta Sans', sans-serif;
+        background-color: #07090e;
+        color: #f1f5f9;
+        line-height: 1.5;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* HEADER */
+    header {
+        background-color: #0d111a;
+        border-bottom: 1px solid #1e293b;
+        padding: 1rem 2rem;
+    }
+    .header-container {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo {
+        font-size: 1.6rem;
+        font-weight: 800;
+        color: #a855f7;
+        letter-spacing: -0.5px;
+    }
+    .logo span { color: #ec4899; }
+    
+    .search-box input {
+        background: #111827;
+        border: 1px solid #1f2937;
+        border-radius: 20px;
+        padding: 0.5rem 1.2rem;
+        color: #94a3b8;
+        font-size: 0.85rem;
+        width: 260px;
+        outline: none;
+    }
+
+    /* MAIN WRAPPER */
+    .main-wrapper {
+        max-width: 1280px;
+        margin: 1.5rem auto;
+        padding: 0 1.5rem;
+    }
+
+    /* HERO BANNER */
+    .hero-banner {
+        background: linear-gradient(180deg, rgba(13, 17, 26, 0.8) 0%, rgba(13, 17, 26, 0.95) 100%), 
+                    url('https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
+        border: 1px solid #1e293b;
+        border-radius: 16px;
+        padding: 3.5rem 2rem;
+        text-align: center;
+        margin-bottom: 2.5rem;
+    }
+    .hero-title {
+        font-size: 2.4rem;
+        font-weight: 800;
+        color: #ffffff;
+        margin-bottom: 0.8rem;
+        letter-spacing: -0.5px;
+    }
+    .hero-subtitle {
+        color: #94a3b8;
+        max-width: 650px;
+        margin: 0 auto 1.8rem auto;
+        font-size: 0.95rem;
+    }
+    .hero-tags {
+        display: flex;
+        justify-content: center;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+    }
+    .hero-tag {
+        border: 1px solid #a855f7;
+        color: #c084fc;
+        padding: 0.4rem 1rem;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+        background: rgba(168, 85, 247, 0.08);
+    }
+
+    /* SECTION TITLE */
+    .section-title {
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 1.2rem;
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+    .section-title::before {
+        content: '';
+        width: 4px;
+        height: 20px;
+        background-color: #ec4899;
+        border-radius: 2px;
+        display: inline-block;
+    }
+
+    /* GRID & CARDS */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+    }
+
+    .card {
+        background: #0f172a;
+        border: 1px solid #1e293b;
+        border-radius: 12px;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .card:hover {
+        border-color: #a855f7;
+        transform: translateY(-3px);
+    }
+
+    .card-img-wrap {
+        position: relative;
+        height: 170px;
+        overflow: hidden;
+    }
+    .card-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-badge {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(15, 23, 42, 0.85);
+        color: #ec4899;
+        border: 1px solid #ec4899;
+        font-size: 0.7rem;
+        padding: 0.2rem 0.6rem;
+        border-radius: 4px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.3rem;
+    }
+
+    .card-content {
+        padding: 1.2rem;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card-title {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 0.4rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .card-title i {
+        color: #a855f7;
+        font-size: 1rem;
+    }
+    .card-desc {
+        font-size: 0.8rem;
+        color: #64748b;
+        margin-bottom: 1.2rem;
+    }
+    .card-btn {
+        background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 0.85rem;
+        text-align: center;
+        padding: 0.6rem;
+        border-radius: 6px;
+        display: block;
+        transition: opacity 0.2s;
+    }
+    .card-btn:hover {
+        opacity: 0.9;
+    }
+
+    /* FOOTER */
+    footer {
+        background: #0d111a;
+        border-top: 1px solid #1e293b;
+        text-align: center;
+        padding: 2rem;
+        font-size: 0.85rem;
+        color: #64748b;
+        margin-top: 2rem;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 900px) {
+        .cards-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+        .cards-grid { grid-template-columns: 1fr; }
+        .hero-title { font-size: 1.7rem; }
+    }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo"><i class="fa-solid fa-gamepad"></i> Matrix<span>Zone</span></div>
+            <div class="search-box">
+                <input placeholder="Search games, movies, anime..." type="text"/>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-wrapper">
+        <!-- Hero Section -->
+        <div class="hero-banner">
+            <h1 class="hero-title">Next-Gen Entertainment & Esports Hub</h1>
+            <p class="hero-subtitle">Your premier source for gaming reviews, pop culture leaks, cinematic analyses, streaming trends, and digital media insights.</p>
+            <div class="hero-tags">
+                <span class="hero-tag"><i class="fa-solid fa-headset"></i> Gaming & Esports</span>
+                <span class="hero-tag"><i class="fa-solid fa-film"></i> Movies & Shows</span>
+                <span class="hero-tag"><i class="fa-solid fa-tv"></i> Anime & Comics</span>
+                <span class="hero-tag"><i class="fa-solid fa-vr-cardboard"></i> Web3 & Tech</span>
+            </div>
+        </div>
+
+        <!-- Entertainment Categories -->
+        <div class="section-title">Trending Categories & Media Hub</div>
+        
+        <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img alt="PC & Console Gaming" src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=500&auto=format&fit=crop"/>
+                    <span class="card-badge"><i class="fa-solid fa-desktop"></i> Gaming</span>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <div class="card-title"><i class="fa-solid fa-dragon"></i> Next-Gen Console Releases</div>
+                        <div class="card-desc">PlayStation 5 • Xbox • PC Graphics</div>
+                    </div>
+                    <a class="card-btn" href="#">Read Review</a>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img alt="Mobile Gaming" src="https://images.unsplash.com/photo-1511512578047-dfb367046420?q=80&w=500&auto=format&fit=crop"/>
+                    <span class="card-badge"><i class="fa-solid fa-mobile-screen"></i> Mobile</span>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <div class="card-title"><i class="fa-solid fa-crosshair"></i> Competitive Esports & FPS</div>
+                        <div class="card-desc">Mobile Optimization • Tournaments</div>
+                    </div>
+                    <a class="card-btn" href="#">Explore Guides</a>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img alt="Cinema" src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?q=80&w=500&auto=format&fit=crop"/>
+                    <span class="card-badge"><i class="fa-solid fa-video"></i> Movies</span>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <div class="card-title"><i class="fa-solid fa-clapperboard"></i> Blockbuster Cinema Breakdown</div>
+                        <div class="card-desc">Box Office • Film Reviews • Trailers</div>
+                    </div>
+                    <a class="card-btn" href="#">Watch Coverage</a>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img alt="Anime" src="https://images.unsplash.com/photo-1578632767115-351597cf2477?q=80&w=500&auto=format&fit=crop"/>
+                    <span class="card-badge"><i class="fa-solid fa-hat-wizard"></i> Anime</span>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <div class="card-title"><i class="fa-solid fa-wand-magic-sparkles"></i> Seasonal Anime Rankings</div>
+                        <div class="card-desc">Manga Adaptation • Episode Recaps</div>
+                    </div>
+                    <a class="card-btn" href="#">Check Rankings</a>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img alt="Streaming" src="https://images.unsplash.com/photo-1522869635100-9f4c5e86aa37?q=80&w=500&auto=format&fit=crop"/>
+                    <span class="card-badge"><i class="fa-solid fa-display"></i> Streaming</span>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <div class="card-title"><i class="fa-solid fa-play"></i> OTT & Series Recommendations</div>
+                        <div class="card-desc">Netflix • Prime • Disney+ Highlights</div>
+                    </div>
+                    <a class="card-btn" href="#">Discover Shows</a>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card">
+                <div class="card-img-wrap">
+                    <img alt="Tech & VR" src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=500&auto=format&fit=crop"/>
+                    <span class="card-badge"><i class="fa-solid fa-vr-cardboard"></i> Tech</span>
+                </div>
+                <div class="card-content">
+                    <div>
+                        <div class="card-title"><i class="fa-solid fa-microchip"></i> Hardware & VR Gear Tech</div>
+                        <div class="card-desc">Virtual Reality • Peripherals</div>
+                    </div>
+                    <a class="card-btn" href="#">Read Specs</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; MatrixZone. All Rights Reserved. Designed for gaming and pop culture enthusiasts.</p>
+    </footer>
+
+</body>
+  </html>
+  
