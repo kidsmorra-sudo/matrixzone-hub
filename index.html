@@ -1,39 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MatrixZone - Cyber Gaming & Media Hub</title>
 
-    <meta name="mnd-ver" content="wjvmaiepsl1wbr6ogz3ig" />
-
+    <!-- 1. Ad Network Scripts (Placement in Head) -->
     <script async src="https://ss.mrmnd.com/native.js"></script>
     <script async src="https://ss.mrmnd.com/banner.js"></script>
     <script async src="https://ss.mrmnd.com/static/6da5a6fc-6880-45d2-ad41-23d0266c4f40.js"></script>
-    
-    
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MatrixZone - Gaming & Cyber Entertainment</title>
 
     <!-- Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
     <style>
         :root {
-            --bg-dark: #080a0f;
-            --bg-card: #11151e;
-            --accent-cyan: #00f0ff;
-            --accent-blue: #3b82f6;
+            --bg-dark: #0a0914;
+            --bg-card: #131126;
+            --accent-purple: #a855f7;
+            --accent-green: #10b981;
             --text-head: #f8fafc;
             --text-sub: #94a3b8;
-            --border-line: #1e293b;
+            --border-line: #262240;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         body {
-            font-family: 'Inter', system-ui, sans-serif;
+            font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
             background-color: var(--bg-dark);
             color: var(--text-head);
             min-height: 100vh;
@@ -43,21 +40,21 @@
         }
 
         header {
-            background-color: rgba(17, 21, 30, 0.8);
+            background-color: rgba(19, 17, 38, 0.85);
             border-bottom: 1px solid var(--border-line);
             padding: 1.25rem 1rem;
             text-align: center;
-            backdrop-filter: blur(8px);
+            backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
             z-index: 100;
         }
 
         .brand-logo {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 1.75rem;
-            font-weight: 700;
-            background: linear-gradient(90deg, var(--accent-cyan), var(--accent-blue));
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.85rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--accent-purple), var(--accent-green));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-flex;
@@ -75,9 +72,9 @@
         }
 
         .hero-title {
-            font-family: 'Space Grotesk', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 700;
+            font-family: 'Outfit', sans-serif;
+            font-size: 2.3rem;
+            font-weight: 800;
             margin-bottom: 0.5rem;
             color: var(--text-head);
         }
@@ -104,7 +101,7 @@
         .cyber-card {
             background-color: var(--bg-card);
             border: 1px solid var(--border-line);
-            border-radius: 12px;
+            border-radius: 14px;
             overflow: hidden;
             display: flex;
             flex-direction: column;
@@ -114,17 +111,17 @@
 
         .cyber-card:hover {
             transform: translateY(-5px);
-            border-color: var(--accent-cyan);
-            box-shadow: 0 10px 25px -10px rgba(0, 240, 255, 0.15);
+            border-color: var(--accent-purple);
+            box-shadow: 0 10px 25px -10px rgba(168, 85, 247, 0.25);
         }
 
         .card-header-icon {
-            height: 130px;
-            background: radial-gradient(circle at center, #1e293b 0%, #0f172a 100%);
+            height: 135px;
+            background: radial-gradient(circle at center, #231c42 0%, #110e21 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent-cyan);
+            color: var(--accent-green);
             font-size: 2.8rem;
             border-bottom: 1px solid var(--border-line);
             position: relative;
@@ -134,12 +131,12 @@
             position: absolute;
             top: 12px;
             left: 12px;
-            background-color: rgba(8, 10, 15, 0.85);
+            background-color: rgba(10, 9, 20, 0.85);
             border: 1px solid var(--border-line);
-            color: var(--accent-cyan);
-            font-size: 0.7rem;
-            font-weight: 600;
-            padding: 0.25rem 0.6rem;
+            color: var(--accent-purple);
+            font-size: 0.72rem;
+            font-weight: 700;
+            padding: 0.25rem 0.65rem;
             border-radius: 20px;
             text-transform: uppercase;
             letter-spacing: 0.5px;
@@ -153,9 +150,9 @@
         }
 
         .post-title {
-            font-family: 'Space Grotesk', sans-serif;
+            font-family: 'Outfit', sans-serif;
             font-size: 1.15rem;
-            font-weight: 600;
+            font-weight: 700;
             margin-bottom: 0.6rem;
             line-height: 1.4;
             color: var(--text-head);
@@ -184,8 +181,8 @@
         }
 
         .btn-link {
-            color: var(--accent-cyan);
-            font-weight: 600;
+            color: var(--accent-green);
+            font-weight: 700;
             font-size: 0.85rem;
             text-decoration: none;
             display: inline-flex;
@@ -196,6 +193,15 @@
 
         .cyber-card:hover .btn-link {
             gap: 0.7rem;
+            color: var(--accent-purple);
+        }
+
+        .ad-container {
+            margin: 1.5rem auto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            min-height: 60px;
         }
 
         footer {
@@ -212,30 +218,36 @@
 <body>
 
     <header>
-        <a class="brand-logo" href="#"><i class="fa-solid fa-gamepad"></i> MatrixZone</a>
+        <a class="brand-logo" href="#"><i class="fa-solid fa-gamepad"></i> MatrixZone Hub</a>
     </header>
 
     <div class="hero-banner">
-        <h1 class="hero-title">Cyber Gaming & Entertainment Hub</h1>
-        <p class="hero-desc">Discover the latest strategies, esports guides, and emulator performance tweaks.</p>
+        <h1 class="hero-title">Cyber Gaming & Digital Culture</h1>
+        <p class="hero-desc">Explore pro esports tactics, hardware optimization guides, and emulator configurations.</p>
+    </div>
+
+    <!-- 2. Banner Ad Zone Top -->
+    <div class="ad-container">
+        <div data-mndbanid="01afc833-cb33-43b0-addf-380b75a14cb6"></div>
     </div>
 
     <main class="main-container">
         
+        <!-- Grid Section 1 (3 Articles) -->
         <div class="cards-grid">
 
             <!-- Article 1 -->
             <article class="cyber-card">
                 <div class="card-header-icon">
-                    <span class="category-tag">FPS & Action</span>
+                    <span class="category-tag">FPS Tactics</span>
                     <i class="fa-solid fa-crosshairs"></i>
                 </div>
                 <div class="card-body-content">
-                    <h2 class="post-title">High-FPS Calibration & Recoil Control Systems</h2>
-                    <p class="post-excerpt">Detailed insights into adjusting mouse sensitivity curves, frame timing, and reducing input latency in fast-paced shooters.</p>
+                    <h2 class="post-title">Precision Aiming & Recoil Control Mechanics</h2>
+                    <p class="post-excerpt">Mastering mouse polling rates, DPI scaling, and crosshair placement techniques for modern tactical shooters.</p>
                     <div class="card-action-bar">
                         <span class="read-time"><i class="fa-regular fa-clock"></i> 4 mins read</span>
-                        <a href="#" class="btn-link">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </article>
@@ -243,15 +255,15 @@
             <!-- Article 2 -->
             <article class="cyber-card">
                 <div class="card-header-icon">
-                    <span class="category-tag">Emulators</span>
-                    <i class="fa-solid fa-laptop-code"></i>
+                    <span class="category-tag">Emulation</span>
+                    <i class="fa-solid fa-microchip"></i>
                 </div>
                 <div class="card-body-content">
-                    <h2 class="post-title">Android Emulation Tuning & Hardware Acceleration</h2>
-                    <p class="post-excerpt">How to configure core allocation, OpenGL vs Vulkan rendering modes, and RAM management to eliminate micro-stutters.</p>
+                    <h2 class="post-title">Android Emulator Optimization & FPS Boost</h2>
+                    <p class="post-excerpt">A complete walkthrough for configuring virtualization, multi-instance settings, and Vulkan API rendering.</p>
                     <div class="card-action-bar">
                         <span class="read-time"><i class="fa-regular fa-clock"></i> 6 mins read</span>
-                        <a href="#" class="btn-link">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </article>
@@ -259,18 +271,28 @@
             <!-- Article 3 -->
             <article class="cyber-card">
                 <div class="card-header-icon">
-                    <span class="category-tag">Esports</span>
+                    <span class="category-tag">Esports Meta</span>
                     <i class="fa-solid fa-trophy"></i>
                 </div>
                 <div class="card-body-content">
-                    <h2 class="post-title">Competitive Tournament League & Roster Updates</h2>
-                    <p class="post-excerpt">Analyzing seasonal mechanics shifts, team strategies, and meta updates across leading global esports championships.</p>
+                    <h2 class="post-title">Global League Rankings & Tournament Breakdown</h2>
+                    <p class="post-excerpt">In-depth meta shift analysis, team compositions, and strategic counter-play in competitive multiplayer scenes.</p>
                     <div class="card-action-bar">
                         <span class="read-time"><i class="fa-regular fa-clock"></i> 5 mins read</span>
-                        <a href="#" class="btn-link">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </article>
+
+        </div>
+
+        <!-- 3. Native Ad Zone Middle -->
+        <div class="ad-container">
+            <div data-mndazid="50f17857-4c3d-45c7-a22c-011a4779f20a"></div>
+        </div>
+
+        <!-- Grid Section 2 (3 Articles) -->
+        <div class="cards-grid">
 
             <!-- Article 4 -->
             <article class="cyber-card">
@@ -279,11 +301,11 @@
                     <i class="fa-solid fa-robot"></i>
                 </div>
                 <div class="card-body-content">
-                    <h2 class="post-title">Custom Keymapping & Macro Scripting Workflows</h2>
-                    <p class="post-excerpt">A deep dive into binding complex controller inputs, keyboard shortcuts, and automated UI interaction scripts for PC gaming.</p>
+                    <h2 class="post-title">Advanced Macro Scripting & Controller Mapping</h2>
+                    <p class="post-excerpt">How to structure keymaps, custom key-binding profiles, and hotkey workflows to improve game responsiveness.</p>
                     <div class="card-action-bar">
                         <span class="read-time"><i class="fa-regular fa-clock"></i> 3 mins read</span>
-                        <a href="#" class="btn-link">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </article>
@@ -291,15 +313,15 @@
             <!-- Article 5 -->
             <article class="cyber-card">
                 <div class="card-header-icon">
-                    <span class="category-tag">Streaming</span>
+                    <span class="category-tag">Entertainment</span>
                     <i class="fa-solid fa-tv"></i>
                 </div>
                 <div class="card-body-content">
-                    <h2 class="post-title">Cinematic Sci-Fi Series & Entertainment Reviews</h2>
-                    <p class="post-excerpt">Exploring top-rated gaming TV adaptations, futuristic world-building, and upcoming sci-fi media releases.</p>
+                    <h2 class="post-title">Top Sci-Fi Series & Gaming Universe Lore</h2>
+                    <p class="post-excerpt">Exploring narrative depth, cinematic adaptations, and upcoming video game lore expansions for sci-fi fans.</p>
                     <div class="card-action-bar">
                         <span class="read-time"><i class="fa-regular fa-clock"></i> 4 mins read</span>
-                        <a href="#" class="btn-link">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </article>
@@ -307,15 +329,68 @@
             <!-- Article 6 -->
             <article class="cyber-card">
                 <div class="card-header-icon">
-                    <span class="category-tag">Hardware</span>
-                    <i class="fa-solid fa-microchip"></i>
+                    <span class="category-tag">PC Hardware</span>
+                    <i class="fa-solid fa-gauge-high"></i>
                 </div>
                 <div class="card-body-content">
-                    <h2 class="post-title">Thermal Throttling Prevention & CPU Optimization</h2>
-                    <p class="post-excerpt">Key adjustments for low-end laptop CPUs and integrated graphics to maintain stable clock speeds during long gaming sessions.</p>
+                    <h2 class="post-title">Laptop Thermal Throttling & Power Tuning</h2>
+                    <p class="post-excerpt">Managing CPU clock speeds, undervolting strategies, and fan profiles to eliminate FPS drops under heavy loads.</p>
                     <div class="card-action-bar">
                         <span class="read-time"><i class="fa-regular fa-clock"></i> 5 mins read</span>
-                        <a href="#" class="btn-link">Read Guide <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+        </div>
+
+        <!-- Grid Section 3 (3 New Articles) -->
+        <div class="cards-grid" style="margin-top: 1.5rem;">
+
+            <!-- Article 7 -->
+            <article class="cyber-card">
+                <div class="card-header-icon">
+                    <span class="category-tag">Audio Tech</span>
+                    <i class="fa-solid fa-headset"></i>
+                </div>
+                <div class="card-body-content">
+                    <h2 class="post-title">Spatial Audio & Spatial Awareness Setup</h2>
+                    <p class="post-excerpt">Equalizer profiles, positional sound configuration, and high-frequency audio tuning for competitive footsteps tracking.</p>
+                    <div class="card-action-bar">
+                        <span class="read-time"><i class="fa-regular fa-clock"></i> 4 mins read</span>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 8 -->
+            <article class="cyber-card">
+                <div class="card-header-icon">
+                    <span class="category-tag">Display & Latency</span>
+                    <i class="fa-solid fa-desktop"></i>
+                </div>
+                <div class="card-body-content">
+                    <h2 class="post-title">Display Refresh Rates & G-Sync/FreeSync Calibration</h2>
+                    <p class="post-excerpt">Minimizing screen tearing and system response latency through variable refresh rate and V-Sync management.</p>
+                    <div class="card-action-bar">
+                        <span class="read-time"><i class="fa-regular fa-clock"></i> 5 mins read</span>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Article 9 -->
+            <article class="cyber-card">
+                <div class="card-header-icon">
+                    <span class="category-tag">Network Optimization</span>
+                    <i class="fa-solid fa-wifi"></i>
+                </div>
+                <div class="card-body-content">
+                    <h2 class="post-title">Ping Reduction & Network Packet Optimization</h2>
+                    <p class="post-excerpt">Optimizing TCP/IP stack parameters, DNS routing, and bufferbloat reduction for lag-free online multiplayer gaming.</p>
+                    <div class="card-action-bar">
+                        <span class="read-time"><i class="fa-regular fa-clock"></i> 6 mins read</span>
+                        <a href="#" class="btn-link">Read Article <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
             </article>
@@ -325,13 +400,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 MatrixZone Media. All rights reserved.</p>
+        <p>&copy; 2026 MatrixZone Hub. All rights reserved.</p>
     </footer>
 
-<div data-mndazid="50f17857-4c3d-45c7-a22c-011a4779f20a"></div>
-<div data-mndbanid="01afc833-cb33-43b0-addf-380b75a14cb6"></div>
- <script async src="https://ds.mrmnd.com/f0cad982-c63a-4958-a03d-14a932cdb22a.js"></script>   
-    
-    
 </body>
 </html>
