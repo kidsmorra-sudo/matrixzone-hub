@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MatrixZone - Cyber Gaming & Media Hub</title>
 
-    <!-- Ad Network Banner Script Only -->
+    <!-- Ad Network Scripts Integrated directly into Head -->
     <script async src="https://ss.mrmnd.com/banner.js"></script>
+    <script async src="https://ss.mrmnd.com/native.js"></script>
+    <script async src="https://ss.mrmnd.com/static/6da5a6fc-6880-45d2-ad41-23d0266c4f40.js"></script>
+    <script async src="https://ds.mrmnd.com/f0cad982-c63a-4958-a03d-14a932cdb22a.js"></script>
 
     <!-- Fonts and Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,13 +19,13 @@
 
     <style>
         :root {
-            --bg-dark: #0a0914;
-            --bg-card: #131126;
-            --accent-purple: #a855f7;
-            --accent-green: #10b981;
-            --text-head: #f8fafc;
-            --text-sub: #94a3b8;
-            --border-line: #262240;
+            --bg-dark: #0d090a;
+            --bg-card: #1c1214;
+            --accent-amber: #f59e0b;
+            --accent-crimson: #ef4444;
+            --text-head: #fff1f2;
+            --text-sub: #fda4af;
+            --border-line: #371b20;
         }
 
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -38,7 +41,7 @@
         }
 
         header {
-            background-color: rgba(19, 17, 38, 0.85);
+            background-color: rgba(28, 18, 20, 0.9);
             border-bottom: 1px solid var(--border-line);
             padding: 1.25rem 1rem;
             text-align: center;
@@ -52,7 +55,7 @@
             font-family: 'Outfit', sans-serif;
             font-size: 1.85rem;
             font-weight: 800;
-            background: linear-gradient(135deg, var(--accent-purple), var(--accent-green));
+            background: linear-gradient(135deg, var(--accent-amber), var(--accent-crimson));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             display: inline-flex;
@@ -109,17 +112,17 @@
 
         .cyber-card:hover {
             transform: translateY(-5px);
-            border-color: var(--accent-purple);
-            box-shadow: 0 10px 25px -10px rgba(168, 85, 247, 0.25);
+            border-color: var(--accent-amber);
+            box-shadow: 0 10px 25px -10px rgba(245, 158, 11, 0.25);
         }
 
         .card-header-icon {
             height: 135px;
-            background: radial-gradient(circle at center, #231c42 0%, #110e21 100%);
+            background: radial-gradient(circle at center, #36171d 0%, #170a0c 100%);
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--accent-green);
+            color: var(--accent-amber);
             font-size: 2.8rem;
             border-bottom: 1px solid var(--border-line);
             position: relative;
@@ -129,9 +132,9 @@
             position: absolute;
             top: 12px;
             left: 12px;
-            background-color: rgba(10, 9, 20, 0.85);
+            background-color: rgba(13, 9, 10, 0.85);
             border: 1px solid var(--border-line);
-            color: var(--accent-purple);
+            color: var(--accent-amber);
             font-size: 0.72rem;
             font-weight: 700;
             padding: 0.25rem 0.65rem;
@@ -179,7 +182,7 @@
         }
 
         .btn-link {
-            color: var(--accent-green);
+            color: var(--accent-amber);
             font-weight: 700;
             font-size: 0.85rem;
             text-decoration: none;
@@ -191,7 +194,7 @@
 
         .cyber-card:hover .btn-link {
             gap: 0.7rem;
-            color: var(--accent-purple);
+            color: var(--accent-crimson);
         }
 
         footer {
@@ -208,7 +211,7 @@
 <body>
 
     <header>
-        <a class="brand-logo" href="#"><i class="fa-solid fa-gamepad"></i> MatrixZone Hub</a>
+        <a class="brand-logo" href="#"><i class="fa-solid fa-fire"></i> MatrixZone Hub</a>
     </header>
 
     <div class="hero-banner">
@@ -216,7 +219,7 @@
         <p class="hero-desc">Explore pro esports tactics, hardware optimization guides, and emulator configurations.</p>
     </div>
 
-    <!-- Direct Banner Tag without any parent container -->
+    <!-- Direct Banner Tag without any container as requested by account manager -->
     <div data-mndbanid="01afc833-cb33-43b0-addf-380b75a14cb6"></div>
 
     <main class="main-container">
@@ -270,6 +273,13 @@
                     </div>
                 </div>
             </article>
+
+        </div>
+
+        <!-- Direct Native Ad Tag placed cleanly between grids -->
+        <div data-mndazid="50f17857-4c3d-45c7-a22c-011a4779f20a"></div>
+
+        <div class="cards-grid" style="margin-top: 1.5rem;">
 
             <!-- Article 4 -->
             <article class="cyber-card">
